@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Anya Denisova](https://up.htmlacademy.ru/adaptive/15/user/826045).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Перейро](https://up.htmlacademy.ru/adaptive/15/user/336863).
 
 ---
 
