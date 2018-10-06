@@ -36,16 +36,14 @@
         <div class="application__wrapper">
           <p class="application__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
           <form class="application__form form" action="https://echo.htmlacademy.ru" method="get" name="program-selection">
-            
-            <div class="form__section-wrapper" aria-label="Информация о коте и выбор программы питания"> есть же тег fieldset используй его
-              
-              <ul class="form__info form__info--main" aria-label="Информация о коте"> а зачем --main ?
+            <div class="form__section-wrapper" aria-label="Информация о коте и выбор программы питания">
+              <ul class="form__info" aria-label="Информация о коте">
                 <li class="form__field">
                   <label class="form__label" for="cat-name">Имя:*</label>
                   <input class="form__input input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" autocomplete="on" required>
                 </li>
-                <li class="text__field">
-                  <label class="text__label" for="cat-weight">Вес (кг):*</label>
+                <li class="form__field">
+                  <label class="form__label" for="cat-weight">Вес (кг):*</label>
                   <input class="form__input input" type="text" name="cat-weight" id="cat-weight" placeholder="7" autocomplete="on" required>
                 </li>
                 <li class="form__field">
@@ -53,67 +51,78 @@
                   <input class="form__input input" type="text" name="cat-age" id="cat-age" placeholder="7" autocomplete="on">
                 </li>
               </ul>
-              
               <ul class="form__info" aria-label="Выбор программы питания">
                 <li class="form__field">
-                  <label class="form__label" for="slim">
+                  <label class="form__label form__label--option" for="slim">
                     <input class="visually-hidden form__radio radio" type="radio" name="program" id="slim" value="slim" checked>
-                    <span class="radio-fields__indicator"></span>
+                    <span class="radio__indicator"></span>
                     Похудение
                   </label>
                 </li>
-              </ul>
-            </div>
-            
-            <div class="form__section-wrapper"> fieldset
-              <h2 class="form__title section-caption">Контактные данные<br>(владельца кота)</h2> заголовок для секций с --lined
-              дальше по аналогии с верхними блоками
-              <ul class="form__info text-fields" aria-label="Информация о владельце">
-                <li class="text-fields__field">
-                  <label class="text-fields__label" for="owner-email">E-mail:*</label>
-                  <input class="text-fields__input text-fields__input--icon text-fields__input--icon-letter" type="email" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com" autocomplete="on" required>
+                <li class="form__field">
+                  <label class="form__label form__label--option" for="mass">
+                    <input class="visually-hidden form__radio radio" type="radio" name="program" id="mass" value="mass">
+                    <span class="radio__indicator"></span>
+                    Набор массы
+                  </label>
                 </li>
-                <li class="text-fields__field">
-                  <label class="text-fields__label" for="owner-tel">Телефон:*</label>
-                  <input class="text-fields__input text-fields__input--icon text-fields__input--icon-tel" type="tel" name="owner-tel" id="owner-tel" placeholder="8 (960) 900 60 90" autocomplete="on" required>
+                <li class="form__field">
+                  <label class="form__label form__label--option" for="advice">
+                    <input class="visually-hidden form__radio radio" type="radio" name="program" id="advice" value="advice">
+                    <span class="radio__indicator"></span>
+                    Не знаю (нужен ваш совет)
+                  </label>
                 </li>
               </ul>
             </div>
             <div class="form__section-wrapper">
-              <h2 class="form__title section-caption">Комментарий</h2>
-              <div class="form__info textarea-field" aria-label="Ваш комментарий">
+              <h2 class="form__title section-caption section-caption--lined">Контактные данные<br>(владельца кота)</h2>
+              <ul class="form__info" aria-label="Информация о владельце">
+                <li class="form__field">
+                  <label class="form__label" for="owner-email">E-mail:*</label>
+                  <input class="form__input input input--icon input--mail" type="email" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com" autocomplete="on" required>
+                </li>
+                <li class="form__field">
+                  <label class="form__label" for="owner-tel">Телефон:*</label>
+                  <input class="form__input input input--icon input--tel" type="tel" name="owner-tel" id="owner-tel" placeholder="8 (960) 900 60 90" autocomplete="on" required>
+                </li>
+              </ul>
+            </div>
+            <div class="form__section-wrapper">
+              <h2 class="form__title section-caption section-caption--lined">Комментарий</h2>
+              <div class="form__info" aria-label="Ваш комментарий">
                 <label class="visually-hidden" for="comment">Ваш комментарий</label>
-                <textarea name="textarea-field__field" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+                <textarea name="form__field textarea" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
             </div>
             <div class="form__section-wrapper">
-              <h2 class="form__title section-caption">Дополнительно</h2>
-              <ul class="form__info checkbox-fields" aria-label="Дополнительные товары">
-                <li class="checkbox-fields__option">
-                  <label class="checkbox-fields__label" for="sugar-subst">
-                    <input class="visually-hidden checkbox-fields__input" type="checkbox" name="sugar-subst" id="sugar-subst" checked>
-                    <span class="checkbox-fields__indicator"></span>
+              <h2 class="form__title section-caption section-caption--lined">Дополнительно</h2>
+              <ul class="form__info" aria-label="Дополнительные товары">
+                <li class="form__field">
+                  <label class="form__label form__label--option" for="sugar-subst">
+                    <input class="visually-hidden form__checkbox checkbox" type="checkbox" name="sugar-subst" id="sugar-subst" checked>
+                    <span class="checkbox__indicator"></span>
                     Сахарозаменитель
                   </label>
                 </li>
-                <li class="checkbox-fields__option">
-                  <label class="checkbox-fields__label" for="water">
-                    <input class="visually-hidden checkbox-fields__input" type="checkbox" name="water" id="water">
-                    <span class="checkbox-fields__indicator"></span>
+                <li class="form__field">
+                  <label class="form__label form__label--option" for="water">
+                    <input class="visually-hidden form__checkbox checkbox" type="checkbox" name="water" id="water">
+                    <span class="checkbox__indicator"></span>
                     Питьевая вода
                   </label>
                 </li>
-                <li class="checkbox-fields__option">
-                  <label class="checkbox-fields__label" for="milk">
-                    <input class="visually-hidden checkbox-fields__input" type="checkbox" name="milk" id="milk">
-                    <span class="checkbox-fields__indicator"></span>
+                <li class="form__field">
+                  <label class="form__label form__label--option" for="milk">
+                    <input class="visually-hidden form__checkbox checkbox" type="checkbox" name="milk" id="milk">
+                    <span class="checkbox__indicator"></span>
                     Молоко
                   </label>
                 </li>
-                <li class="checkbox-fields__option">
-                  <label class="checkbox-fields__label" for="vitamins">
-                    <input class="visually-hidden checkbox-fields__input" type="checkbox" name="vitamins" id="vitamins">
-                    <span class="checkbox-fields__indicator"></span>
+                <li class="form__field">
+                  <label class="form__label form__label--option" for="vitamins">
+                    <input class="visually-hidden form__checkbox checkbox" type="checkbox" name="vitamins" id="vitamins">
+                    <span class="checkbox__indicator"></span>
                     Витамины
                   </label>
                 </li>

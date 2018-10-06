@@ -31,61 +31,209 @@
       </div>
     </header>
     <main class="inner-page-main">
-      <h1 class="inner-page-main__title section-title section-title--inner">Каталог продукции</h1> 
-      а для чего модификатор --inner ? если текст чем-ьто отличается - то пусть будет, если нет - то не нужен
+      <h1 class="inner-page-main__title section-title">Каталог продукции</h1>
       <section class="catalog">
         <div class="catalog__wrapper">
           <h2 class="visually-hidden">Каталог функционального питания</h2>
           <ul class="catalog__list">
-            
-            <li class="catalog__item card"> и класс card, всё т.е. всё содержимое будет уже карточки
-              <div class="catalog__product-card"> зачем еще див внутри item ? думаю, он не нужен 
-                <img class="card__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="Cat Energy Pro с курицей 500 грамм">         
-                <div class="card__info">
-                  <h2 class="card__title">Cat Energy<br>Pro 500 г</h2>
-                  <table class="card__values">
-                    <tr>
-                      <td class="card__field">Объем</td>
-                      <td class="card__value">500 г</td>
-                    </tr>
-                    <tr>
-                      <td class="card__field">Вкус</td>
-                      <td class="card__value">Курица</td>
-                    </tr>
-                    <tr>
-                      <td class="card__field">Цена</td>
-                      <td class="card__value">700 Р</td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <button class="card__button button button--full" type="button">Заказать</button>
-              тут по идее кнопка тянется на 100% и по этому модификатор --full
-            </li>
-          </ul>
-          <div class="catalog-item catalog__catalog-item--more card">
-             <p class="card__title">Показать еще 100500 товаров</p>
-             <p class="card__text">На самом деле вкусов гораздо больше!</p>
-            <a class="cart__button button card--more" href="#">Показать все</a>
-          </div>
-        </div>
-      </section>
-      
-      <section class="additional-products">
-        <div class="additional-products__wrapper">
-          <h2 class="additional-products__title section-caption--lined">Дополнительные товары</h2> --lined Будет добавлять линию зеленую
-          <ul class="additional-products__list" aria-label="Список дополнительных товаров">
-            <li class="additional-products__item product-description">
-              <div class="additional-products__product-wrapper"> думаю, лишний тег
-                <p class="product-description__title">Сахарозаменитель</p>
-                <table class="product-description__values">
+            <li class="catalog__item card">
+              <img class="card__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="Cat Energy Pro с курицей 500 грамм">
+              <div class="card__info">
+                <h2 class="card__title">Cat Energy<br>Pro 500 г</h2>
+                <table class="card__values">
                   <tr>
-                    <td class="product-description__field">1 упаковка (100 г)</td>
-                    <td class="product-description__value">100 Р</td>
+                    <td class="card__field">Объем</td>
+                    <td class="card__value">500 г</td>
+                  </tr>
+                  <tr>
+                    <td class="card__field">Вкус</td>
+                    <td class="card__value">Курица</td>
+                  </tr>
+                  <tr>
+                    <td class="card__field">Цена</td>
+                    <td class="card__value">700 Р</td>
                   </tr>
                 </table>
               </div>
-              <button class="additional-products__button button" type="button">Заказать</button>
+              <button class="card__button button button--full" type="button">Заказать</button>
+            </li>
+            <li class="catalog__item card">
+              <img class="card__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="Cat Energy Pro с курицей 1000 грамм">
+              <div class="card__info">
+                <h2 class="card__title">Cat Energy<br>Pro 1000 г</h2>
+                <table class="card__values">
+                  <tr>
+                    <td class="card__field">Объем</td>
+                    <td class="card__value">1000 г</td>
+                  </tr>
+                  <tr>
+                    <td class="card__field">Вкус</td>
+                    <td class="card__value">Курица</td>
+                  </tr>
+                  <tr>
+                    <td class="card__field">Цена</td>
+                    <td class="card__value">1000 Р</td>
+                  </tr>
+                </table>
+              </div>
+              <button class="card__button button button--full" type="button">Заказать</button>
+            </li>
+            <li class="catalog__item card">
+              <img class="card__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="Cat Energy Pro с рыбой 500 грамм">
+              <div class="card__info">
+                <h2 class="card__title">Cat Energy<br>Pro 500 г</h2>
+                <table class="card__values">
+                  <tr>
+                    <td class="card__field">Объем</td>
+                    <td class="card__value">500 г</td>
+                  </tr>
+                  <tr>
+                    <td class="card__field">Вкус</td>
+                    <td class="card__value">Рыба</td>
+                  </tr>
+                  <tr>
+                    <td class="card__field">Цена</td>
+                    <td class="card__value">700 Р</td>
+                  </tr>
+                </table>
+              </div>
+              <button class="card__button button button--full" type="button">Заказать</button>
+            </li>
+            <li class="catalog__item card">
+              <img class="card__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="Cat Energy Pro с рыбой 1000 грамм">
+              <div class="card__info">
+                <h2 class="card__title">Cat Energy<br>Pro 1000 г</h2>
+                <table class="card__values">
+                  <tr>
+                    <td class="card__field">Объем</td>
+                    <td class="card__value">1000 г</td>
+                  </tr>
+                  <tr>
+                    <td class="card__field">Вкус</td>
+                    <td class="card__value">Рыба</td>
+                  </tr>
+                  <tr>
+                    <td class="card__field">Цена</td>
+                    <td class="card__value">1000 Р</td>
+                  </tr>
+                </table>
+              </div>
+              <button class="card__button button button--full" type="button">Заказать</button>
+            </li>
+            <li class="catalog__item card">
+              <img class="card__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="Cat Energy Slim с гречкой 500 грамм">
+              <div class="card__info">
+                <h2 class="card__title">Cat Energy<br>Slim 500 г</h2>
+                <table class="card__values">
+                  <tr>
+                    <td class="card__field">Объем</td>
+                    <td class="card__value">500 г</td>
+                  </tr>
+                  <tr>
+                    <td class="card__field">Вкус</td>
+                    <td class="card__value">Гречка</td>
+                  </tr>
+                  <tr>
+                    <td class="card__field">Цена</td>
+                    <td class="card__value">400 Р</td>
+                  </tr>
+                </table>
+              </div>
+              <button class="card__button button button--full" type="button">Заказать</button>
+            </li>
+            <li class="catalog__item card">
+              <img class="card__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="Cat Energy Slim с гречкой 1000 грамм">
+              <div class="card__info">
+                <h2 class="card__title">Cat Energy<br>Slim 1000 г</h2>
+                <table class="card__values">
+                  <tr>
+                    <td class="card__field">Объем</td>
+                    <td class="card__value">1000 г</td>
+                  </tr>
+                  <tr>
+                    <td class="card__field">Вкус</td>
+                    <td class="card__value">Гречка</td>
+                  </tr>
+                  <tr>
+                    <td class="card__field">Цена</td>
+                    <td class="card__value">700 Р</td>
+                  </tr>
+                </table>
+              </div>
+              <button class="card__button button button--full" type="button">Заказать</button>
+            </li>
+            <li class="catalog__item card">
+              <img class="card__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="Cat Energy Slim с рисом 500 грамм">
+              <div class="card__info">
+                <h2 class="card__title">Cat Energy<br>Slim 500 г</h2>
+                <table class="card__values">
+                  <tr>
+                    <td class="card__field">Объем</td>
+                    <td class="card__value">500 г</td>
+                  </tr>
+                  <tr>
+                    <td class="card__field">Вкус</td>
+                    <td class="card__value">Рис</td>
+                  </tr>
+                  <tr>
+                    <td class="card__field">Цена</td>
+                    <td class="card__value">500 Р</td>
+                  </tr>
+                </table>
+              </div>
+              <button class="card__button button button--full" type="button">Заказать</button>
+            </li>
+          </ul>
+          <div class="catalog__catalog-item catalog__catalog-item--more card">
+            <p class="card__title">Показать еще 100500 товаров</p>
+            <p class="card__text">На самом деле вкусов гораздо больше!</p>
+            <a class="cart__button card__button--more button" href="#">Показать все</a>
+          </div>
+        </div>
+      </section>
+      <section class="additional-products">
+        <div class="additional-products__wrapper">
+          <h2 class="additional-products__title section-caption section-caption--lined">Дополнительные товары</h2>
+          <ul class="additional-products__list" aria-label="Список дополнительных товаров">
+            <li class="additional-products__item product-description">
+              <p class="product-description__title">Сахарозаменитель</p>
+              <table class="product-description__values">
+                <tr>
+                  <td class="product-description__field">1 упаковка (100 г)</td>
+                  <td class="product-description__value">100 Р</td>
+                </tr>
+              </table>
+              <button class="additional-products__button button button--full" type="button">Заказать</button>
+            </li>
+            <li class="additional-products__item product-description">
+              <p class="product-description__title">Питьевая вода</p>
+              <table class="product-description__values">
+                <tr>
+                  <td class="product-description__field">5 литров</td>
+                  <td class="product-description__value">50 Р</td>
+                </tr>
+              </table>
+              <button class="additional-products__button button button--full" type="button">Заказать</button>
+            </li>
+            <li class="additional-products__item product-description">
+              <p class="product-description__title">Молоко</p>
+              <table class="product-description__values">
+                <tr>
+                  <td class="product-description__field">1 литр</td>
+                  <td class="product-description__value">100 Р</td>
+                </tr>
+              </table>
+              <button class="additional-products__button button button--full" type="button">Заказать</button>
+            </li>
+            <li class="additional-products__item product-description">
+              <p class="product-description__title">Витамины</p>
+              <table class="product-description__values">
+                <tr>
+                  <td class="product-description__field">1 упаковка (30 г)</td>
+                  <td class="product-description__value">300 Р</td>
+                </tr>
+              </table>
+              <button class="additional-products__button button button--full" type="button">Заказать</button>
             </li>
           </ul>
         </div>
