@@ -36,47 +36,38 @@
         <div class="application__wrapper">
           <p class="application__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
           <form class="application__form form" action="https://echo.htmlacademy.ru" method="get" name="program-selection">
-            <div class="form__section-wrapper" aria-label="Информация о коте и выбор программы питания">
-              <ul class="form__info form__info--main text-fields" aria-label="Информация о коте">
-                <li class="text-fields__field">
-                  <label class="text-fields__label" for="cat-name">Имя:*</label>
-                  <input class="text-fields__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" autocomplete="on" required>
+            
+            <div class="form__section-wrapper" aria-label="Информация о коте и выбор программы питания"> есть же тег fieldset используй его
+              
+              <ul class="form__info form__info--main" aria-label="Информация о коте"> а зачем --main ?
+                <li class="form__field">
+                  <label class="form__label" for="cat-name">Имя:*</label>
+                  <input class="form__input input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" autocomplete="on" required>
                 </li>
-                <li class="text-fields__field">
-                  <label class="text-fields__label" for="cat-weight">Вес (кг):*</label>
-                  <input class="text-fields__input" type="text" name="cat-weight" id="cat-weight" placeholder="7" autocomplete="on" required>
+                <li class="text__field">
+                  <label class="text__label" for="cat-weight">Вес (кг):*</label>
+                  <input class="form__input input" type="text" name="cat-weight" id="cat-weight" placeholder="7" autocomplete="on" required>
                 </li>
-                <li class="text-fields__field">
-                  <label class="text-fields__label" for="cat-age">Возраст (лет):*</label>
-                  <input class="text-fields__input" type="text" name="cat-age" id="cat-age" placeholder="7" autocomplete="on">
+                <li class="form__field">
+                  <label class="form__label" for="cat-age">Возраст (лет):*</label>
+                  <input class="form__input input" type="text" name="cat-age" id="cat-age" placeholder="7" autocomplete="on">
                 </li>
               </ul>
-              <ul class="form__info form__info--main radio-fields" aria-label="Выбор программы питания">
-                <li class="radio-fields__option">
-                  <label class="radio-fields__label" for="slim">
-                    <input class="visually-hidden radio-fields__input" type="radio" name="program" id="slim" value="slim" checked>
+              
+              <ul class="form__info" aria-label="Выбор программы питания">
+                <li class="form__field">
+                  <label class="form__label" for="slim">
+                    <input class="visually-hidden form__radio radio" type="radio" name="program" id="slim" value="slim" checked>
                     <span class="radio-fields__indicator"></span>
                     Похудение
                   </label>
                 </li>
-                <li class="radio-fields__option">
-                  <label class="radio-fields__label" for="gain-weight">
-                    <input class="visually-hidden radio-fields__input" type="radio" name="program" id="gain-weight" value="gain-weight">
-                    <span class="radio-fields__indicator"></span>
-                    Набор массы
-                  </label>
-                </li>
-                <li class="radio-fields__option">
-                  <label class="radio-fields__label" for="need-advice">
-                    <input class="visually-hidden radio-fields__input" type="radio" name="program" id="need-advice" value="need-advice">
-                    <span class="radio-fields__indicator"></span>
-                    Не знаю (Нужен ваш совет)
-                  </label>
-                </li>
               </ul>
             </div>
-            <div class="form__section-wrapper">
-              <h2 class="form__title section-caption">Контактные данные<br>(владельца кота)</h2>
+            
+            <div class="form__section-wrapper"> fieldset
+              <h2 class="form__title section-caption">Контактные данные<br>(владельца кота)</h2> заголовок для секций с --lined
+              дальше по аналогии с верхними блоками
               <ul class="form__info text-fields" aria-label="Информация о владельце">
                 <li class="text-fields__field">
                   <label class="text-fields__label" for="owner-email">E-mail:*</label>
