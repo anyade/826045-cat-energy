@@ -1,0 +1,113 @@
+.programs {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.programs__item {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 22px 20px;
+  background-color: @bg-grey;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.programs__title {
+  margin: 10px 0 32px;
+  padding-left: 72px;
+  .font(24px, 400, 37px);
+  color: @font-black;
+  text-transform: uppercase;
+
+  &--weight {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 35px;
+      height: 49px;
+      top: -6px;
+      left: 6px;
+      background-image: url("../../source/img/icon-cat-slim.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 5;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: -4px;
+      left: 0;
+      background-color: @green;
+      border-radius: 50%;
+    }
+  }
+
+  &--mass {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 67px;
+      height: 28px;
+      top: 5px;
+      left: -9px;
+      background-image: url("../../source/img/icon-cat-pro.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 5;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: -4px;
+      left: 0;
+      background-color: @green;
+      border-radius: 50%;
+    }
+  }
+}
+
+.programs__description {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 24px;
+  font-family: "Arial", sans-serif;
+  .font(14px, 400, 18px);
+  color: @font-grey;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.programs__link {
+  margin: 0;
+  padding-top: 20px;
+  position: relative;
+  display: block;
+  .font(16px, 400, 16px);
+  color: @font-black;
+  text-transform: uppercase;
+  text-align: left;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 12px;
+    top: 21px;
+    left: 97px;
+    background-image: url("../../source/img/icon-right-arrow-long.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,41 @@
+.controls {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.controls__button {
+  &--before {
+    margin-right: 18px;
+  }
+
+  &--after {
+    margin-left: 18px;
+  }
+  display: inline-block;
+  font-family: inherit;
+  .font(16px, 400, 20px);
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.controls__scale {
+  padding: 0 6px;
+  width: 84px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  background-color: @bg-white;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+}
+
+.controls__toggle {
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: @green;
+}

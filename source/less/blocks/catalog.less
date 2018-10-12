@@ -1,0 +1,25 @@
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  .list-reset();
+}
+
+.catalog__item--more {
+  padding-top: 80px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    top: 42px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../../source/img/icon-plus-mobile.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
