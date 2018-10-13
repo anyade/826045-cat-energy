@@ -1,0 +1,19 @@
+.section-caption {
+  .font(24px, 400, 24px);
+  color: @font-black;
+
+  &--lined {
+    display: flex;
+    align-items: center;
+
+    &::after {
+      content: "";
+      margin-top: 5px;
+      margin-left: 24px;
+      height: 3px;
+      flex-grow: 1;
+      flex-shrink: 0;
+      background-color: @green;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__section-wrapper {
+  margin: 0;
+  margin-bottom: 31px;
+}
+
+.form__info {
+  margin: 0;
+  padding: 0;
+  .list-reset();
+  display: flex;
+  flex-direction: column;
+
+  &--framed {
+    margin-top: 23px;
+    padding: 21px 0;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+  }
+}
+
+.form__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.form__field {
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0;
+  display: flex;
+  align-items: baseline;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--center {
+    align-items: center;
+  }
+}
+
+.form__label {
+  margin: 0;
+  margin-right: 15px;
+  .font(16px, 400, 18px);
+  color: #222222;
+  text-transform: uppercase;
+
+  &--option {
+    padding-left: 46px;
+    position: relative;
+    line-height: 30px;
+  }
+
+  &--radio {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      border: 1px solid #cdcdcd;
+    }
+  }
+
+  &--checkbox {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: 0;
+      left: 0;
+      border: 1px solid #cdcdcd;
+    }
+  }
+}

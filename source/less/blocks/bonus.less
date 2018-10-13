@@ -1,0 +1,32 @@
+.bonus {
+  margin: 0 20px 35px;
+  padding: 0;
+  padding-top: 126px;
+  display: flex;
+  position: relative;
+  background-image: url("../../source/img/gift-photo-mobile@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 56px;
+    height: 61px;
+    top: 93px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../../source/img/icon-gift.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.bonus__description {
+  margin: 62px 0 41px;
+  padding: 0 60px;
+  font-family: "Arial", sans-serif;
+  .font(16px, 400, 20px);
+  color: @font-white;
+  text-align: center;
+}
