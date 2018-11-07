@@ -1,0 +1,31 @@
+.radio:checked ~ .radio__indicator {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 9px;
+  left: 9px;
+  background-color: @green;
+  border-radius: 50%;
+}
+
+.radio:disabled + .form__label--radio {
+  color: fade(#222222, 30%);
+}
+
+.radio:disabled + .form__label--radio::before {
+  border-color: fade(#cdcdcd, 30%);
+}
+
+.radio:checked:disabled ~ .radio__indicator {
+  background-color: fade(@green, 30%);
+}
+
+@media (min-width: @tablet-width) {
+  .radio:checked ~ .radio__indicator {
+    width: 18px;
+    height: 18px;
+    top: 11px;
+    left: 11px;
+  }
+}

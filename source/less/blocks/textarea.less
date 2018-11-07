@@ -1,11 +1,29 @@
 .textarea {
   margin: 0;
-  padding: 14px 13px;
+  padding: 14px;
   min-height: 150px;
   flex-grow: 1;
   font-family: "Oswald", "Arial", sans-serif;
   .font(16px, 400, 18px);
   color: @font-grey;
   text-transform: uppercase;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #e6e6e6;
+  outline: none;
+}
+
+.textarea:hover {
+  border-color: #cdcdcd;
+}
+
+.textarea:active {
+  border: 1px solid #222222;
+  box-shadow: 0 0 0 1px #222222;
+}
+
+@media (min-width: @tablet-width) {
+  .textarea {
+    padding: 10px 18px;
+    min-height: 174px;
+    .font(20px, 400, 30px);
+  }
 }

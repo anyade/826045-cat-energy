@@ -1,12 +1,12 @@
 .programs {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   padding: 0 20px;
 }
 
 .programs__item {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   padding: 22px 20px;
   background-color: @bg-grey;
 
@@ -16,7 +16,7 @@
 }
 
 .programs__title {
-  margin: 10px 0 32px;
+  margin: 8px 0 29px;
   padding-left: 72px;
   .font(24px, 400, 37px);
   color: @font-black;
@@ -30,8 +30,8 @@
       position: absolute;
       width: 35px;
       height: 49px;
-      top: -6px;
-      left: 6px;
+      top: -8px;
+      left: 9px;
       background-image: url("../../source/img/icon-cat-slim.svg");
       background-position: center;
       background-repeat: no-repeat;
@@ -43,8 +43,8 @@
       position: absolute;
       width: 50px;
       height: 50px;
-      top: -4px;
-      left: 0;
+      top: -6px;
+      left: 2px;
       background-color: @green;
       border-radius: 50%;
     }
@@ -59,7 +59,7 @@
       width: 67px;
       height: 28px;
       top: 5px;
-      left: -9px;
+      left: -7px;
       background-image: url("../../source/img/icon-cat-pro.svg");
       background-position: center;
       background-repeat: no-repeat;
@@ -71,8 +71,8 @@
       position: absolute;
       width: 50px;
       height: 50px;
-      top: -4px;
-      left: 0;
+      top: -6px;
+      left: 2px;
       background-color: @green;
       border-radius: 50%;
     }
@@ -82,7 +82,7 @@
 .programs__description {
   margin: 0;
   padding: 0;
-  padding-bottom: 24px;
+  padding-bottom: 21px;
   font-family: "Arial", sans-serif;
   .font(14px, 400, 18px);
   color: @font-grey;
@@ -105,9 +105,183 @@
     width: 25px;
     height: 12px;
     top: 21px;
-    left: 97px;
+    left: 95px;
     background-image: url("../../source/img/icon-right-arrow-long.svg");
     background-position: center;
     background-repeat: no-repeat;
+  }
+}
+
+.programs__link:hover::after {
+  width: 32px;
+  background-image: url("../../source/img/icon-right-arrow-verylong.svg");
+}
+
+.programs__link:active {
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .programs {
+    margin-bottom: 46px;
+    padding: 0 30px;
+  }
+
+  .programs__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .programs__item {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 77px 0 62px 53px;
+    width: 100%;
+  }
+
+  .programs__title {
+    margin: 0 0 25px;
+    padding: 0 42% 0 0;
+    min-width: 53%;
+    font-size: 36px;
+
+    &--weight {
+      &::before {
+        width: 141px;
+        height: 194px;
+        top: 10%;
+        left: calc(100% - 234px);
+      }
+
+      &::after {
+        width: 200px;
+        height: 200px;
+        top: 40%;
+        left: calc(100% - 262px);
+      }
+    }
+
+    &--mass {
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 268px;
+        height: 113px;
+        top: 156%;
+        left: calc(100% - 296px);
+      }
+
+      &::after {
+        width: 200px;
+        height: 200px;
+        top: 40%;
+        left: calc(100% - 261px);
+      }
+    }
+  }
+
+  .programs__description {
+    margin: 0;
+    margin-bottom: 55px;
+    padding: 0 42% 0 0;
+    .font(16px, 400, 24px);
+    color: @font-grey;
+    border-bottom: none;
+
+    &--wide {
+      padding: 0 48% 0 0;
+    }
+  }
+
+  .programs__link {
+    padding-top: 0;
+    .font(20px, 400, 20px);
+
+    &::after {
+      width: 24px;
+      height: 11px;
+      top: 6px;
+      left: 128px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programs {
+    margin-bottom: 72px;
+    padding: 0 110px;
+  }
+
+  .programs__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .programs__item {
+    margin: 0;
+    padding: 78px 55px 62px 52px;
+    width: 46.7%;
+  }
+
+  .programs__title {
+    margin: 0 0 72px;
+    padding: 0 0 0 163px;
+    min-width: 53%;
+
+    &--weight {
+      &::before {
+        width: 71px;
+        height: 97px;
+        top: -97%;
+        left: calc(100% - 449px);
+      }
+
+      &::after {
+        width: 100px;
+        height: 100px;
+        top: -84%;
+        left: calc(100% - 464px);
+      }
+    }
+
+    &--mass {
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 134px;
+        height: 57px;
+        top: -26%;
+        left: calc(100% - 481px);
+      }
+
+      &::after {
+        width: 100px;
+        height: 100px;
+        top: -84%;
+        left: calc(100% - 464px);
+      }
+    }
+  }
+
+  .programs__description {
+    margin-bottom: 32px;
+    padding: 0;
+
+    &--wide {
+      padding: 0;
+    }
+  }
+
+  .programs__link {
+    &::after {
+      width: 25px;
+      height: 12px;
+      top: 2px;
+      left: 127.5px;
+    }
   }
 }

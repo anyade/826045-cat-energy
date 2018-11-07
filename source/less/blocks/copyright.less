@@ -4,6 +4,25 @@
   align-items: center;
 }
 
+.copyright__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover .copyright__icon path {
+    fill: #81c25a;
+  }
+
+  &:active .copyright__icon path {
+    fill: fade(#81c25a, 30%);
+  }
+
+  &:active .copyright__link--text {
+    color: fade(@font-grey, 30%);
+  }
+}
+
 .copyright__link {
   margin: 0;
   padding: 0;
@@ -11,7 +30,27 @@
   color: @font-grey;
 
   &--text {
+    margin-top: -3px;
     font-family: "Arial", sans-serif;
     .font(16px, 400, 16px);
+  }
+}
+
+.copyright__icon path {
+  width: 27px;
+  height: 34px;
+  fill: @font-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__wrapper {
+    width: auto;
+  }
+
+  .copyright__link {
+    &--text {
+      margin: -7px 23px 0 0;
+      min-width: 115px;
+    }
   }
 }

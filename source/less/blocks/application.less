@@ -1,7 +1,6 @@
 .application {
-  margin: 0;
-  margin-bottom: 33px;
-  padding: 0 20px;
+  margin: -3px 0 31px;
+  padding: 0;
 }
 
 .application__wrapper {
@@ -12,9 +11,8 @@
 }
 
 .application__description {
-  margin: 0;
-  margin-bottom: 37px;
-  padding: 0;
+  margin: 0 0 39px;
+  padding: 0 20px;
   .font(14px, 400, 18px);
   color: @font-black;
   text-transform: uppercase;
@@ -22,15 +20,28 @@
 
 .application__form {
   margin: 0;
-  margin-bottom: 22px;
   padding: 0;
 }
 
-.application__annotation {
-  margin: 0;
-  padding: 0;
-  display: block;
-  font-family: "Arial", sans-serif;
-  .font(14px, 400, 16px);
-  text-align: center;
+@media (min-width: @tablet-width) {
+  .application {
+    margin-bottom: 73px;
+  }
+
+  .application__description {
+    margin: 33px 0 65px;
+    padding: 0 70px;
+    .font(20px, 400, 30px);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .application {
+    margin-bottom: 82px;
+  }
+
+  .application__description {
+    margin-top: 35px;
+    padding: 0 110px;
+  }
 }

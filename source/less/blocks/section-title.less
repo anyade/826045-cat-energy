@@ -9,3 +9,24 @@
     color: @font-white;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .section-title {
+    font-size: 60px;
+    text-align: left;
+
+    &--white {
+      margin-left: 89px;
+      line-height: 60px;
+      color: @font-black;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .section-title {
+    &--white {
+      margin-left: 0;
+    }
+  }
+}

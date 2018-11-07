@@ -2,4 +2,22 @@
   background-image: url("../../source/img/bg-map-mobile@1x.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    background-image: url("../../source/img/bg-map-tablet@1x.png");
+  }
+
+  .map iframe {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    background-image: url("../../source/img/bg-map-desktop@1x.png");
+  }
 }

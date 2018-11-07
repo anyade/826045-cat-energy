@@ -1,7 +1,10 @@
 @import "mixins.less";
 @import "variables.less";
+@import "normalize.less";
+@import "scaffolding.less";
 @import "fonts.less";
 @import "blocks/page-header.less";
+@import "blocks/logo.less";
 @import "blocks/main-nav.less";
 @import "blocks/main-info.less";
 @import "blocks/section-title.less";
@@ -27,50 +30,6 @@
 @import "blocks/application.less";
 @import "blocks/form.less";
 @import "blocks/input.less";
+@import "blocks/radio.less";
 @import "blocks/textarea.less";
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  min-width: 320px;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  color: @font-grey;
-  background-color: @bg-white;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+@import "blocks/checkbox.less";

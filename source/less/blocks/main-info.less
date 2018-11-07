@@ -1,7 +1,7 @@
 .main-info {
   margin: 0;
-  margin-bottom: 22px;
-  padding: 29px 20px 0;
+  margin-bottom: 24px;
+  padding: 27px 20px 0;
   background-image: url("../../source/img/index-background-mobile@1x.jpg");
   background-position: top;
   background-repeat: no-repeat;
@@ -10,6 +10,9 @@
 .main-info__wrapper {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-info__title {
@@ -17,7 +20,7 @@
 }
 
 .main-info__slogan {
-  margin: 19px 10px 29px;
+  margin: 25px 10px 29px;
   padding: 0;
   .font(14px, 400, 14px);
   color: @font-white;
@@ -26,11 +29,134 @@
 }
 
 .main-info__image {
-  margin: 0 auto 3px;
+  margin: 0 auto 2px;
   padding: 0;
-  display: block;
+
+  &--mobile {
+    width: 280px;
+    height: 271px;
+  }
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
 }
 
 .main-info__button {
-  width: 280px;
+  min-width: 280px;
+}
+
+.main-info__background {
+  display: none;
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-info__title {
+    max-width: 320px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-info {
+    margin-bottom: 0;
+    padding: 0 31px 0 29px;
+    background-image: none;
+  }
+
+  .main-info__wrapper {
+    position: relative;
+    align-items: flex-start;
+  }
+
+  .main-info__title {
+    max-width: 60%;
+  }
+
+  .main-info__slogan {
+    margin: 42px 0 18px 89px;
+    .font(20px, 400, 20px);
+    color: @font-black;
+  }
+
+  .main-info__image {
+    margin: 0 auto;
+
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      width: 709px;
+      height: 609px;
+      display: block;
+    }
+  }
+
+  .main-info__button {
+    min-width: 245px;
+    position: absolute;
+    top: 229px;
+    left: 90px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-info {
+    margin-top: 109px;
+    margin-bottom: 267px;
+    padding: 0 110px 0 109px;
+  }
+
+  .main-info__wrapper {
+    padding: 0 80px 0;
+  }
+
+  .main-info__title {
+    max-width: 50%;
+  }
+
+  .main-info__slogan {
+    margin: 41px 0 54px;
+  }
+
+  .main-info__image {
+    margin: 0;
+
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      width: 552px;
+      height: 499px;
+      display: block;
+      position: absolute;
+      top: -80px;
+      left: 450px;
+      z-index: 5;
+    }
+  }
+
+  .main-info__button {
+    position: static;
+  }
+
+  .main-info__background {
+    display: block;
+    width: 720px;
+    height: 696px;
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    background-image: url("../../source/img/index-background-desktop@1x.jpg");
+  }
 }

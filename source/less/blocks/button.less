@@ -1,6 +1,6 @@
 .button {
   margin: 0;
-  padding: 14px 10px 11px;
+  padding: 10px;
   display: block;
   font-family: "Oswald", "Arial", sans-serif;
   .font(16px, 400, 20px);
@@ -17,5 +17,21 @@
 
   &--full {
     width: 100%;
+  }
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: fade(@font-white, 30%);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button--index {
+    padding: 15px 10px 17px 6px;
+    .font(20px, 400, 20px);
   }
 }
